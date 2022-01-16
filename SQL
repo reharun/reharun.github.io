@@ -1,7 +1,0 @@
-Apa itu SQL Injection ?
-SQL Injection adalah salah satu teknik yang menyalahgunakan celah keamanan yang ada di SQL pada lapisan database suatu aplikasi atau di website. Celah ini terjadi karena input dari user tidak difilter secara benar dan dalam pembuatannya menggunakan form yang salah. 
-Hal yang berdampak akibat SQL Injection :
-	Bypass Otentikasi
-	Pencurian informasi
-	Hapus Data
-	perubahan data
